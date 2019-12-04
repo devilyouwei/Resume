@@ -15,51 +15,61 @@
         <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
         <style>
-.intro h1:before {
-    content: 'YOUWE';
+body.print{
+    font-size:150%;
 }
-.link {
-    color:blue;
-}
-.link:hover{
-    color:#1a52a5!important;
-}
-.link:active{
-    color:#1a52a5!important;
-}
-                .bold{
-                    font-weight:bold;
-                }
-            @media only screen and (max-width: 767px){
-                .main-nav{
-                    padding:23px 0;
-                }
-                .navigation-toggle.navigation-toggle-show {
-                    margin-bottom: 0;
-                }
-                .navbar.item-nav.navigation-target-show{
-                    margin-bottom:0;
-                    margin-top:1.65rem;
-                }
-                .mobile-hidden{
-                    display:none;
-                }
-                .intro {
-                    padding:20px 0;
-                    padding-bottom:0;
-                    text-align:center;
-                    font-weight:bold;
-                }
-                .intro .section .container{
-                    position:inherit;
-                }
-                .intro .section .container:after{
-                    content:'';
-                }
+
+        .container.print{
+            margin: auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        .intro h1:before {
+            content: 'YOUWE';
+        }
+        .link {
+            color:blue;
+        }
+        .link:hover{
+            color:#1a52a5!important;
+        }
+        .link:active{
+            color:#1a52a5!important;
+        }
+        .bold{
+            font-weight:bold;
+        }
+        @media only screen and (max-width: 767px){
+            .main-nav{
+                padding:23px 0;
             }
-            footer{
-                padding-top:30px;
+            .navigation-toggle.navigation-toggle-show {
+                margin-bottom: 0;
             }
+            .navbar.item-nav.navigation-target-show{
+                margin-bottom:0;
+                margin-top:1.65rem;
+            }
+            .mobile-hidden{
+                display:none;
+            }
+            .intro {
+                padding:20px 0;
+                padding-bottom:0;
+                text-align:center;
+                font-weight:bold;
+            }
+            .intro .section .container{
+                position:inherit;
+            }
+            .intro .section .container:after{
+                content:'';
+            }
+        }
+        footer{
+            padding-top:30px;
+        }
         </style>
     </head>
     <body>
@@ -250,6 +260,17 @@
                 // Change to edit type effect
                 strings: ["LONG BRANCH NJ US","SHANGHAI CHINA","MACAU SAR","www.devil.ren"],
                 typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+            function GetQueryString(name){
+                var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if(r!=null)return  unescape(r[2]); return null;
+            }
+            $(function(){
+                if(GetQueryString('print')){
+                    $('body').addClass('print')
+                    $('.container').addClass('print')
+                }
+            })
         </script>
     </body>
 </html>
