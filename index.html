@@ -27,6 +27,33 @@
 .link:active{
     color:#1a52a5!important;
 }
+            @media only screen and (max-width: 767px){
+                .main-nav{
+                    padding:23px 0;
+                }
+                .navigation-toggle.navigation-toggle-show {
+                    margin-bottom: 0;
+                }
+                .navbar.item-nav.navigation-target-show{
+                    margin-bottom:0;
+                    margin-top:1.65rem;
+                }
+                .mobile-hidden{
+                    display:none;
+                }
+                .intro {
+                    padding:20px 0;
+                    padding-bottom:0;
+                    text-align:center;
+                    font-weight:bold;
+                }
+                .intro .section .container{
+                    position:inherit;
+                }
+                .intro .section .container:after{
+                    content:'';
+                }
+            }
         </style>
     </head>
     <body>
@@ -57,7 +84,7 @@
                     <div class="unit-20">
                         <img src="img/ava.png" alt="Avatar">
                     </div>
-                    <div class="unit-80">
+                    <div class="unit-80 mobile-hidden">
                         <h1>I live in<br><span id="typed"></span></h1>
                     </div>
                     <p>Talking is cheap, show me the code!</p>
@@ -77,7 +104,7 @@
                 <ul class="skill-list list-flat">
                     <li>OS and Tools</li>
                     <li>Linux / Windows / Vim / Git / bash / Nginx / gcc</li>
-                    <li>Linux + Vim are my favourite development environments.</li>
+                    <li>Linux + Vim are my favourite development environments. 8 years Linux using experience!</li>
                 </ul>
                 <ul class="skill-list list-flat">
                     <li>Database</li>
@@ -86,8 +113,10 @@
                 </ul>
                 <ul class="skill-list list-flat">
                     <li>Framework</li>
-                    <li>ThinkPHP / Vue / Jquery series / Bootstrap / Spring MVC / Node Express</li>
-                    <li>I have much experience in utilizing the MVC framework development.</li>
+                    <li>ThinkPHP / Vue / Jquery series / Bootstrap / Spring MVC / Node Express / Cocos Game Engine</li>
+                    <li>Back-end: Much experience in utilizing the MVC framework development.</li>
+                    <li>Front-end: Use and learn modern front-end framework like Vue, React and Angular.</li>
+                    <li>Game: 2D game development experience with Cocos Creator.</li>
                 </ul>
                 <ul class="skill-list list-flat">
                     <li>Others - Important</li>
@@ -95,7 +124,7 @@
                     <li>I still have some abilities that you might care more about.</li>
                     <li>I'm a developer, but I also know a lot about project, business and how to manage a team.</li>
                     <li>I have my own company in China and I now also have a LLC company and product in the US.</li>
-                    <li>A good programmer should not only have knowledge in coding but also know how the products and markets work.</li>
+                    <li>A good developer should not only have knowledge in coding but also know how the products and markets work.</li>
                 </ul>
             </div>
         </div>
