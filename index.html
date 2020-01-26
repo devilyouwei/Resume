@@ -70,6 +70,9 @@ body.print{
         footer{
             padding-top:30px;
         }
+        #wpac-comment{
+            margin-top:35px;
+        }
         </style>
     </head>
     <body>
@@ -95,7 +98,8 @@ body.print{
         <!-- Introduction -->
         <div class="intro section" id="about">
             <div class="container">
-                <p>Hi, I’m Youwei Huang.</p>
+                <p>Hi, I’m Youwei Huang. Fullstack Developer, Project Manager</p>
+                <p></p>
                 <div class="units-row units-split wrap">
                     <div class="unit-20">
                         <img src="img/ava.jpg" alt="Avatar">
@@ -114,13 +118,13 @@ body.print{
                 <h1>Technical Skills</h1>
                 <ul class="skill-list list-flat">
                     <li>Languages</li>
-                    <li>HTML / CSS / JS / PHP / TS / Java / C# / Kotlin / C / Ruby</li>
+                    <li>HTML / Markdown / CSS / JavaScript / PHP / TypeScript / Java / C# / Kotlin / C </li>
                     <li>I am a fast learner and have worked on various different programming languages.</li>
                 </ul>
                 <ul class="skill-list list-flat">
                     <li>OS and Tools</li>
-                    <li>Linux / Windows / Vim / Git / bash / Nginx / gcc</li>
-                    <li>Linux + Vim are my favourite development environments. 8 years Linux using experience!</li>
+                    <li>Linux / Windows / Vim / Git / Bash / Nginx / Gcc / Apache / npm</li>
+                    <li>Linux + Vim is my favourite development environment. 8 years Linux using experience!</li>
                 </ul>
                 <ul class="skill-list list-flat">
                     <li>Database</li>
@@ -129,7 +133,7 @@ body.print{
                 </ul>
                 <ul class="skill-list list-flat">
                     <li>Framework</li>
-                    <li>ThinkPHP / Vue / Jquery series / Bootstrap / Spring MVC / Node Express / Cocos Game Engine</li>
+                    <li>ThinkPHP / Vue / Jquery Series / Bootstrap / Spring MVC / Node Express / Cocos Game Engine</li>
                     <li>Back-end: Much experience in utilizing the MVC framework development.</li>
                     <li>Front-end: Use and learn modern front-end framework like Vue, React and Angular.</li>
                     <li>Game: 2D game development experience with Cocos Creator Engine.</li>
@@ -138,8 +142,9 @@ body.print{
                     <li>Others - Important</li>
                     <li>Taekwondo / Bussiness / Cooking / Finance marketing / Shanghai dialect </li>
                     <li>I still have some abilities that you might care more about.</li>
-                    <li>I'm a developer, but I also know a lot about project, business and how to manage a team.</li>
-                    <li>I have my own company in China and I now also have a LLC company and product in the US.</li>
+                    <li>I'm a developer, but I also know much about project, business and how to manage a team.</li>
+                    <li>I have some experience in managing a company or team when I was in China.</li>
+                    <li>I manage an LLC and start our own project called <a href="https://github.com/devilyouwei/Qbite" target="_blank">'Qbite'</a> in the US.</li>
                     <li>A good developer should not only have knowledge in coding but also know how the products and markets work.</li>
                 </ul>
             </div>
@@ -175,7 +180,7 @@ body.print{
                 </ul>
                 <ul class="work-list">
                     <li>2019-Now</li>
-                    <li><a href="http://web.qbite.us" target="_blank">Qbyte LLC</a></li>
+                    <li><a href="https://github.com/devilyouwei/Qbite" target="_blank">Qbyte LLC</a></li>
                     <li>Project Manager, Founder</li>
                     <li>Our product is Qbite. Qbite is an online ordering system.</li>
                 </ul>
@@ -224,8 +229,7 @@ body.print{
                 </div>
             </div>
         </div>
-
-        <footer>
+        <div class="contact">
             <div class="container">
                 <div class="units-row">
                     <div class="">
@@ -249,11 +253,15 @@ body.print{
                     <div class="">
                         <a href="tel:+17322680284"><i class="fa fa-phone">&nbsp;</i>+1 (732) 268-0284</a>
                     </div>
-                    <div>This resume is always online: <a href="https://www.devil.ren" class="link bold">www.devil.ren</a> or search <b>"devilyouwei"</b> on <a href="https://www.google.com/search?&q=devilyouwei" target="_blank" class="link bold">Google</a>.</div>
-                    <div class="" style="margin-top:20px;">
-                        <p>Copyright &copy; 2020 <a href="https://www.devil.ren" target="_blank" class="link">devilyouwei</a> name All rights reserved.</p>
-                    </div>
+                    <div id="wpac-comment"></div>
                 </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div>This resume is always online: <a href="https://www.devil.ren" class="link bold">www.devil.ren</a> or search <b>"devilyouwei"</b> on <a href="https://www.google.com/search?&q=devilyouwei" target="_blank" class="link bold">Google</a>.</div>
+                <p>Copyright &copy; 2020 <a href="https://www.devil.ren" target="_blank" class="link">devilyouwei</a> name All rights reserved.</p>
             </div>
         </footer>
 
@@ -278,6 +286,21 @@ body.print{
                     $('body').addClass('print')
                     $('.container').addClass('print')
                 }
+
+
+                // comment API from widget pack
+                wpac_init = window.wpac_init || [];
+                wpac_init.push({widget: 'Comment', id: 23047});
+                (function() {
+                    if ('WIDGETPACK_LOADED' in window) return;
+                    WIDGETPACK_LOADED = true;
+                    var mc = document.createElement('script');
+                    mc.type = 'text/javascript';
+                    mc.async = true;
+                    mc.src = 'https://embed.widgetpack.com/widget.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+
+                })();
             })
 
             window.dataLayer = window.dataLayer || [];
