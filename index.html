@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>devilyouwei's Resume</title>
+        <title>youwei's Resume</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="youwei,devilyouwei,youwe,resume,blog,cv"/>
-        <meta name="description" content="Youwei Huang, a software engineer and project manager from China">
+        <meta name="description" content="Youwei Huang, a fullstack developer and project manager from China">
         <meta name="author" content="devilyouwei">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="css/kube.min.css" />
@@ -26,6 +26,26 @@ body.print{
             margin: auto;
             max-width: 1200px;
             padding: 0 20px;
+        }
+        .work .work-list a.title:hover{
+            opacity:0.5;
+            transition: opacity 0.5s;
+        }
+        .work .work-list a.map{
+            font-weight:normal;
+            border-bottom:none;
+            font-size:12px;
+            transition: margin-left .5s;
+        }
+        .work .work-list a.map:hover{
+            text-decoration:none;
+            border:none;
+            color:#000;
+            margin-left:15px;
+        }
+        .work .work-list li.degree{
+            color:#000;
+            font-style:italic;
         }
 
         .intro h1:before {
@@ -91,6 +111,7 @@ body.print{
                             <li class="active"><a href="#about">About</a></li>
                             <li><a href="#skills">Skills</a></li>
                             <li><a href="#experiences">Experiences</a></li>
+                            <li><a href="#education">Education</a></li>
                             <li><a href="#achievements">Achievements</a></li>
                         </ul>
                     </nav>
@@ -101,7 +122,7 @@ body.print{
         <!-- Introduction -->
         <div class="intro section" id="about">
             <div class="container">
-                <p>Hi, I’m Youwei Huang. Fullstack Developer, Project Manager</p>
+                <p>Hi, I am Youwei Huang. Fullstack Developer</p>
                 <p></p>
                 <div class="units-row units-split wrap">
                     <div class="unit-20">
@@ -126,7 +147,7 @@ body.print{
                 </ul>
                 <ul class="skill-list list-flat">
                     <li>OS and Tools</li>
-                    <li>Linux / Windows / Vim / Git / Bash / Nginx / Gcc / Apache / npm</li>
+                    <li>Linux / Windows / Vim / Git / Bash / Nginx / npm / Apache / gcc</li>
                     <li>Linux + Vim is my favourite development environment. 8 years Linux using experience!</li>
                 </ul>
                 <ul class="skill-list list-flat">
@@ -136,18 +157,17 @@ body.print{
                 </ul>
                 <ul class="skill-list list-flat">
                     <li>Framework</li>
-                    <li>Vue / React / Jquery Series / Bootstrap / ThinkPHP / Node Express / Cocos Game Engine / Spring MVC</li>
+                    <li>Vue / React / Jquery Series / Bootstrap / ThinkPHP / Node Express / Cocos Game Engine </li>
                     <li>Back-end: Much experience in utilizing the MVC framework development.</li>
-                    <li>Front-end: Use and learn modern front-end framework like Vue, React and Angular.</li>
+                    <li>Front-end: Use modern front-end framework like Vue, React and Angular.</li>
                     <li>Game: 2D game development experience with Cocos Creator Engine.</li>
                 </ul>
                 <ul class="skill-list list-flat">
                     <li>Others - Important</li>
                     <li>Taekwondo / Bussiness / Cooking / Finance marketing / Shanghai dialect </li>
                     <li>I still have some abilities that you might care more about.</li>
-                    <li>I'm a developer, but I also know much about product, business and how to manage a team.</li>
-                    <li>I have some experience in managing a company or team when I was in China.</li>
-                    <li>I manage an LLC and my own project called <a href="https://github.com/devilyouwei/Qbite" target="_blank">'Qbite'</a> in the US.</li>
+                    <li>I also know much about product and business.</li>
+                    <li>I have some experience in managing a company and team.</li>
                 </ul>
             </div>
         </div>
@@ -158,36 +178,58 @@ body.print{
                 <h1>Work Experiences</h1>
                 <ul class="work-list">
                     <li>2015-2018</li>
-                    <li><a>Suzhou Pointer Network Technology Company</a></li>
-                    <li>Project Manager, Fullstack Developer</li>
+                    <li><a class="title">Suzhou Pointer Network Technology Company</a></li>
+                    <li><a class="map" href="https://goo.gl/maps/HbuPU1jrAYBGXDXz6" target="_blank"><i class="fa fa-map-marker">&nbsp;</i>Suzhou, China</a></li>
+                    <li>Web Developer</li>
                     <li>I established a company in Suzhou City. As a manager, I manage the project called 'SunJob'.</li>
                     <li>'SunJob' is a platform for college students to find jobs online, it is developed on ASP.NET</li>
                 </ul>
                 <ul class="work-list">
                     <li>2013-2018</li>
-                    <li><a href="http://www.dztkd.net/about.php" target="_blank">West Point TKD</a></li>
-                    <li>Professional Taekwondo Coach, International taekwondo referee (Part-time Job).</li>
+                    <li><a class="title" href="http://www.dztkd.net/about.php" target="_blank">West Point TKD</a></li>
+                    <li><a class="map" href="https://goo.gl/maps/kqsXfVxRSvvnwYcTA" target="_blank"><i class="fa fa-map-marker">&nbsp;</i>Suzhou, China</a></li>
+                    <li>Taekwondo Instructor, Taekwondo referee</li>
+                    <li>Teach Taekwondo (Part-time Job).</li>
                 </ul>
                 <ul class="work-list">
-                    <li>2014-2018</li>
-                    <li><a>CIT</a></li>
-                    <li>Student, Programmer, Leader of the lab</li>
-                    <li>I worked on several college projects for the Student Laboratory in CIT. (Student Part-time Job)</li>
-                </ul>
-                <ul class="work-list">
-                    <li>2018-Now</li>
-                    <li><a href="http://www.le-miao.com/" target="_blank">Shanghai LeMiao Network Technology Company</a></li>
-                    <li>I started out as a Front-end developer here and then became a Game Developer, and later ended up as a Project Manager.</li>
+                    <li>2018-2019</li>
+                    <li><a class="title" href="http://www.le-miao.com/" target="_blank">Shanghai LeMiao Network Technology Company</a></li>
+                    <li><a class="map" href="https://goo.gl/maps/FSetvbJeptbqt7Jz6" target="_blank"><i class="fa fa-map-marker">&nbsp;</i>Shanghai, China</a></li>
+                    <li>Front-end, Game Developer, Project Manager</li>
                     <li>I am the project manager of the product 'I want to win lipsticks' which owns more than 2 millions active users at the peak of our business.</li>
                 </ul>
                 <ul class="work-list">
                     <li>2019-Now</li>
-                    <li><a href="https://github.com/devilyouwei/Qbite" target="_blank">Qbyte LLC</a></li>
-                    <li>Project Manager, Founder</li>
+                    <li><a class="title" href="https://github.com/devilyouwei/Qbite" target="_blank">Qbyte LLC</a></li>
+                    <li><a class="map" href="https://goo.gl/maps/XNNaL3dv9uxjBW4r5" target="_blank"><i class="fa fa-map-marker">&nbsp;</i>Long Branch, NJ, US</a></li>
+                    <li>Project Manager, Web Developer</li>
                     <li>Our product is Qbite. Qbite is an online ordering system.</li>
                 </ul>
 
                 <div style="font-weight:bold;">Want to know more about my experience? Please refer to my <a class="link" href="https://github.com/devilyouwei" target="_blank">GitHub</a> and <a class="link" href="https://www.cnblogs.com/devilyouwei" target="_blank">Blog</a></div>
+            </div>
+        </div>
+
+        <!-- Education Experience -->
+        <div class="work section second" id="education">
+            <div class="container">
+                <h1>Education</h1>
+                <ul class="work-list">
+                    <li>2013-2018</li>
+                    <li><a class="title" href="http://www.cslg.cn" target="_blank">ChangShu Institute of Technology</a></li>
+                    <li><a class="map" href="https://goo.gl/maps/ryJEhxyVeKxqKmfb8" target="_blank"><i class="fa fa-map-marker">&nbsp;</i>Suzhou, China</a></li>
+                    <li class="degree">Bachelor's Degree - Software Engineerning</li>
+                    <li>Manager of Student Innovation Lab</li>
+                    <li>I left school to establish a company for one year in 2015 and returned back in 2016.</li>
+                </ul>
+                <ul class="work-list">
+                    <li>2019-2020</li>
+                    <li><a class="title" href="https://www.monmouth.edu" target="_blank">Monmouth University</a></li>
+                    <li><a class="map" href="https://goo.gl/maps/hp6KqZR33wzF5GzR8" target="_blank"><i class="fa fa-map-marker">&nbsp;</i>NJ, US</a></li>
+                    <li class="degree">Master's Degree - Software Engineerning</li>
+                    <li>President of Chinese Student Associate</li>
+                    <li>Graduate Assitant of Prof. Yu in CS department</li>
+                </ul>
             </div>
         </div>
 
