@@ -17,7 +17,39 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <style>
         body.print {
-            font-size: 170%;
+            font-size: 200%;
+        }
+
+        .video-title {
+            position: fixed;
+            left: 10px;
+            top: 85px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .video1 {
+            position: fixed;
+            left: 10px;
+            top: 120px;
+            height: 130px;
+            width: 16%;
+        }
+
+        .video2 {
+            position: fixed;
+            left: 10px;
+            top: 270px;
+            height: 130px;
+            width: 16%;
+        }
+
+        .video3 {
+            position: fixed;
+            left: 10px;
+            top: 420px;
+            height: 130px;
+            width: 16%;
         }
 
         .hidden {
@@ -26,8 +58,7 @@
 
         .container.print {
             margin: auto;
-            max-width: 1200px;
-            padding: 0 20px;
+            max-width: 95%;
         }
 
         .work .work-list a.title:hover {
@@ -71,6 +102,20 @@
 
         .bold {
             font-weight: bold;
+        }
+
+        img.qrcode {
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            top: 30px;
+            right: 90px;
+            border-radius: 0 !important;
+        }
+
+        img.printimg {
+            width: 180px;
+            height: 180px;
         }
 
         @media only screen and (max-width: 767px) {
@@ -152,14 +197,22 @@
                 </div>
                 <p class="linus">"Talking is cheap, show me the code!" ——Linus Torvalds</p>
                 <p class="print hidden">
-                    This resume is always online: <a href="https://www.devil.ren" class="link bold">www.devil.ren</a> or
-                    search
-                    <b>"devilyouwei"</b> on <a href="https://www.google.com/search?&q=devilyouwei" target="_blank"
-                        class="link bold">Google</a>
+                    <img src="./img/qrcode.png" alt="www.devil.ren" class="qrcode">
+                    This resume is online: <a href="https://www.devil.ren" class="link bold">www.devil.ren</a>
+                    scan the QRcode on the right or
+                    search <b>"devilyouwei"</b> on <a href="https://www.google.com/search?&q=devilyouwei"
+                        target="_blank" class="link bold">Google</a>
                 </p>
             </div>
         </div>
     </div>
+    <div class="video-title video mobile-hidden">Some Of My Works</div>
+    <iframe class="video1 mobile-hidden video" src="https://www.youtube.com/embed/Yle5E99K7PM" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="video2 mobile-hidden video" src="https://www.youtube.com/embed/kdA6MxDlO3Y" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="video3 mobile-hidden video" src="https://www.youtube.com/embed/Vmi0QEa5Qq8" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <!-- Technical Skills -->
     <div class="skills section second" id="skills">
@@ -167,7 +220,7 @@
             <h1>Technical Skills</h1>
             <ul class="skill-list list-flat">
                 <li>Languages</li>
-                <li>HTML / CSS / JavaScript / PHP / TypeScript / Java / C# / Kotlin / C / Markdown</li>
+                <li>HTML / CSS / JavaScript / PHP / TypeScript / Java / C# / C / Markdown</li>
                 <li>I am a fast learner and have worked on various different programming languages in the past 6 years.
                 </li>
             </ul>
@@ -182,19 +235,17 @@
                 <li>I have used different kinds of databases in my projects, mostly use MySQL.</li>
             </ul>
             <ul class="skill-list list-flat">
-                <li>Framework</li>
-                <li>Vue / React / Jquery Series / Bootstrap / ThinkPHP / Node Express / Cocos Game Engine </li>
+                <li>Framework and Model</li>
+                <li>Vue / React / Jquery / Bootstrap / ThinkPHP / Node Express / Cocos Game Engine / CI CD</li>
                 <li>Back-end: Much experience in utilizing the MVC framework development.</li>
-                <li>Front-end: Use modern front-end framework like Vue, React and Angular.</li>
+                <li>Front-end: Much experience in modern front-end like vue and react.</li>
                 <li>Game: 2D game development experience with Cocos Creator Engine.</li>
             </ul>
             <ul class="skill-list list-flat">
                 <li>Others - Important</li>
                 <li>Mandarin Chinese (first language) / English (fluent) / Shanghai dialect (mother language)</li>
                 <li>Taekwondo / Bussiness / Cooking / Finance marketing </li>
-                <li>I still have some abilities that you might care more about.</li>
-                <li>I also know much about product and business.</li>
-                <li>I have some experience in managing a company and team.</li>
+                <li>I have some experience in managing a company or a team.</li>
             </ul>
         </div>
     </div>
@@ -211,7 +262,7 @@
                 <li>Web Developer, Manager</li>
                 <li>I established a company in Suzhou City. As a manager, I created and managed the project called
                     'SunJob'.</li>
-                <li>'SunJob' is a platform for college students to find jobs online, it is developed on ASP.NET</li>
+                <li>'SunJob' is a platform for college students to find jobs online, it is developed on ASP.NET MVC</li>
             </ul>
             <ul class="work-list">
                 <li>2013-2018</li>
@@ -228,16 +279,22 @@
                 <li><a class="map" href="https://goo.gl/maps/FSetvbJeptbqt7Jz6" target="_blank"><i
                             class="fa fa-map-marker">&nbsp;</i>Shanghai, China</a></li>
                 <li>Front-end, Game Developer, Project Manager</li>
-                <li>I started and managed the project called 'I want to win lipsticks game' which owns more than 2
-                    millions active users, it is also the most popular lipsticks game in China.</li>
+                <li>I started and managed a project called <a class="link"
+                        href="https://apps.apple.com/us/developer/shanghai-lemiao-network-technology-company-limited/id1097017164"
+                        target="_blank">I want to win lipsticks game</a>, This game owns more than 2 millions active
+                    users,
+                    it is also the most popular lipsticks game in China. It is developed based on vue for front-end,
+                    react-native for native and php for backend</li>
             </ul>
             <ul class="work-list">
                 <li>2019-Now</li>
                 <li><a class="title" href="https://github.com/devilyouwei/Qbite" target="_blank">Qbyte LLC</a></li>
                 <li><i class="fa fa-map-marker">&nbsp;</i>Long Branch, NJ, US</li>
                 <li>Web Developer</li>
-                <li>Qbyte is a started company, our product is Qbite. Qbite is an online ordering system. I created this
-                    product.</li>
+                <li>Qbyte LLC is a started company. I found it in MU. Our product is named <a href="http:www.qbite.us"
+                        class="link" target="_blank">Qbite</a>. Qbite is an online ordering system. Qbite is developed
+                    on vue for
+                    frontend, bootstrap for our landing page and node for backend.</li>
             </ul>
 
             <div style="font-weight:bold;">Want to know more about my experience? Please refer to my <a class="link"
@@ -265,7 +322,7 @@
                 <li><a class="map" href="https://goo.gl/maps/hp6KqZR33wzF5GzR8" target="_blank"><i
                             class="fa fa-map-marker">&nbsp;</i>NJ, US</a></li>
                 <li class="degree">Master's Degree - Software Engineerning</li>
-                <li>President of Chinese Student Associate</li>
+                <li>President of Chinese Student Association</li>
                 <li>Graduate Assistant of Prof. Yu in CS department</li>
                 <li>PHP developer and tutor, work as a lab assistant at Monmouth University</li>
             </ul>
@@ -276,6 +333,7 @@
     <div class="award section second" id="achievements">
         <div class="container">
             <h1>Award &amp;Achievements</h1>
+            <!--
             <ul class="award-list list-flat">
                 <li>Nov 2018</li>
                 <li>Release App 'I Want To Win Lipstick'</li>
@@ -286,11 +344,13 @@
                         target="_blank">View in apple store</a></li>
                 <li><a class="link" href="https://wap.lipstick.lemiao.xyz" target="_blank">View mobile website</a></li>
             </ul>
+            -->
             <ul class="award-list list-flat">
                 <li>Oct 2017</li>
                 <li>Software Copyright</li>
-                <li>A mobile app 'Dashen' obtains the national software copyright of the People's Republic Of China.
+                <li>My mobile app 'Dashen' obtains the national software copyright of the People's Republic Of China.
                 </li>
+                <li><a class="link" href="https://github.com/devilyouwei/dashen" target="_blank">View Product</a></li>
                 <li><a class="link" href="/assets/Awards/dashen_copyright.jpg" target="_blank">View Copyright</a></li>
             </ul>
             <ul class="award-list list-flat">
@@ -310,11 +370,13 @@
                 <li>After 10 years of learning taekwondo, I achieved a 2nd Degree black belt from 'World Taekwondo
                     Federation'.</li>
             </ul>
+            <!--
             <ul class="award-list list-flat">
                 <li>June 2018</li>
                 <li>Offer From American Megatrends</li>
                 <li>I got an offer from one of the world's biggest bios companies to work at their branch in China.</li>
             </ul>
+            -->
             <div class="">
                 <a href="/assets/Awards.zip" target="_blank"><i class="fa fa-download">&nbsp;</i>Download All My
                     Awards</a>
@@ -356,7 +418,7 @@
 
     <footer>
         <div class="container">
-            <p>Copyright &copy; 2020 <a href="https://www.devil.ren" target="_blank" class="link">devilyouwei</a> name
+            <p>Copyright &copy; 2020 <a href="https://www.devil.ren" target="_blank" class="link">www.devil.ren</a> name
                 All rights reserved.</p>
         </div>
     </footer>
@@ -370,16 +432,14 @@
     <script>
         function newTyped() {}
 
-        function GetQueryString(name) {
-            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-            var r = window.location.search.substr(1).match(reg);
-            if (r != null) return unescape(r[2]);
-            return null;
+        function printResume() {
+            if (location.href.indexOf('print') != -1) return true
+            else return false
         }
         $(function () {
             var typeSpeed = 90
             var backDelay = 700
-            if (GetQueryString('print')) {
+            if (printResume()) {
                 typeSpeed = 1
                 backDelay = 999999
                 $('body').addClass('print')
@@ -388,6 +448,8 @@
                 $('.main-nav').addClass('hidden')
                 $('.print').removeClass('hidden')
                 $('.linus').addClass('hidden')
+                $('img').addClass('printimg')
+                $('.video').addClass('hidden')
             }
             $("#typed").typed({
                 // Change to edit type effect
