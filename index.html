@@ -52,8 +52,12 @@
             width: 16%;
         }
 
-        .hidden {
+        .no-display {
             display: none;
+        }
+
+        .hidden {
+            visibility: hidden;
         }
 
         .container.print {
@@ -108,8 +112,8 @@
             width: 180px;
             height: 180px;
             position: absolute;
-            top: 30px;
-            right: 90px;
+            top: -210px;
+            right: 0px;
             border-radius: 0 !important;
         }
 
@@ -159,6 +163,17 @@
         #wpac-comment {
             margin-top: 35px;
         }
+
+        p.intro-title.absolute {
+            margin-top:50px;
+            position: absolute;
+            top: -190px;
+        }
+        .print-website{
+            position: absolute;
+            top: 130px;
+            margin-bottom:0px;
+        }
     </style>
 </head>
 
@@ -186,22 +201,21 @@
     <!-- Introduction -->
     <div class="intro section" id="about">
         <div class="container">
-            <p>Hi, I am Youwei Huang. Fullstack Developer</p>
+            <p class="intro-title">Hi, I am Youwei Huang. Fullstack Developer</p>
             <p></p>
             <div class="units-row units-split wrap">
                 <div class="unit-20">
-                    <img src="img/ava.jpg" alt="Avatar">
+                    <img src="img/ava.jpg" alt="Avatar" class="avatar">
                 </div>
                 <div class="unit-80 mobile-hidden">
-                    <h1>I live in<br><span id="typed"></span></h1>
+                    <h1 class="live">I live in<br><span id="typed"></span></h1>
                 </div>
                 <p class="linus">"Talking is cheap, show me the code!" ——Linus Torvalds</p>
-                <p class="print hidden">
+                <p class="print-website hidden">
                     <img src="./img/qrcode.png" alt="www.devil.ren" class="qrcode">
-                    This resume is online: <a href="https://www.devil.ren" class="link bold">www.devil.ren</a>
-                    scan the QRcode on the right or
-                    search <b>"devilyouwei"</b> on <a href="https://www.google.com/search?&q=devilyouwei"
-                        target="_blank" class="link bold">Google</a>
+                    My resume is online: <a href="https://www.devil.ren" class="link bold">www.devil.ren</a>
+                    Scan the QRcode on the right or search <b>"devilyouwei"</b> on <a
+                        href="https://www.google.com/search?&q=devilyouwei" target="_blank" class="link bold">Google</a>
                 </p>
             </div>
         </div>
@@ -226,7 +240,7 @@
             </ul>
             <ul class="skill-list list-flat">
                 <li>OS and Tools</li>
-                <li>Linux / Windows / Vim / Git / Bash / Nginx / npm / Apache / gcc</li>
+                <li>Linux / Windows / Vim / Git / Bash / Nginx / npm / Apache / gcc / CI CD</li>
                 <li>Linux + Vim is my favourite development environment. I have 8 years Linux using experience!</li>
             </ul>
             <ul class="skill-list list-flat">
@@ -236,7 +250,7 @@
             </ul>
             <ul class="skill-list list-flat">
                 <li>Framework and Model</li>
-                <li>Vue / React / Jquery / Bootstrap / ThinkPHP / Node Express / Cocos Game Engine / CI CD</li>
+                <li>Vue / React / Jquery / Bootstrap / ThinkPHP / Node Express / Tensorflow.js / Cocos Game Engine</li>
                 <li>Back-end: Much experience in utilizing the MVC framework development.</li>
                 <li>Front-end: Much experience in modern front-end like vue and react.</li>
                 <li>Game: 2D game development experience with Cocos Creator Engine.</li>
@@ -291,7 +305,7 @@
                 <li><a class="title" href="https://github.com/devilyouwei/Qbite" target="_blank">Qbyte LLC</a></li>
                 <li><i class="fa fa-map-marker">&nbsp;</i>Long Branch, NJ, US</li>
                 <li>Web Developer</li>
-                <li>Qbyte LLC is a started company. I found it in MU. Our product is named <a href="http:www.qbite.us"
+                <li>Qbyte LLC is a started company. I found it at MU. Our product is named <a href="https://www.qbite.us"
                         class="link" target="_blank">Qbite</a>. Qbite is an online ordering system. Qbite is developed
                     on vue for
                     frontend, bootstrap for our landing page and node for backend.</li>
@@ -443,13 +457,16 @@
                 typeSpeed = 1
                 backDelay = 999999
                 $('body').addClass('print')
+                $('.intro-title').addClass('absolute')
                 $('.container').addClass('print')
-                $('#wpac-comment').addClass('hidden')
-                $('.main-nav').addClass('hidden')
-                $('.print').removeClass('hidden')
-                $('.linus').addClass('hidden')
+                $('#wpac-comment').addClass('no-display')
+                $('.live').html('&nbsp;</br></br>')
+                $('.avatar').addClass('hidden')
+                $('.main-nav').addClass('no-display')
+                $('.print-website').removeClass('hidden')
+                $('.linus').addClass('no-display')
                 $('img').addClass('printimg')
-                $('.video').addClass('hidden')
+                $('.video').addClass('no-display')
             }
             $("#typed").typed({
                 // Change to edit type effect
