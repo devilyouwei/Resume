@@ -1,10 +1,10 @@
 # Resume(EN)
 
+Hi, I am Youwei
+
 **Looking for a good job**
 
-Youwei's Resume website.
-
-Know more about me?
+Want to know more about me?
 
 Please visit my personal webiste: [www.devil.ren](https://www.devil.ren)
 
@@ -16,7 +16,7 @@ Print my resume: [resume.pdf](./resume.pdf)
 
 瞭解更多，請訪問：[www.devil.ren](https://www.devil.ren)
 
-打印我的簡歷: [resume.pdf](./resume.pdf)
+打印我的簡歷: [简历.pdf](./简历.pdf)
 
 # 简历(ZH)
 
@@ -24,4 +24,4 @@ Print my resume: [resume.pdf](./resume.pdf)
 
 了解更多，请访问：[www.devil.ren](https://www.devil.ren)
 
-打印我的简历: [resume.pdf](./resume.pdf)
+打印我的简历: [简历.pdf](./简历.pdf)
